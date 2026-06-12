@@ -1,16 +1,17 @@
 {
-  "name": "Java 20",
-  "features": {
-    "ghcr.io/devcontainers/features/java:1": {
-      "version": "20",
-      "jdkDistro": "Oracle"
-    }
-  },
-  "customizations": {
-    "vscode": {
-      "extensions": [
-        "vscjava.vscode-java-pack"
-      ]
-    }
-  }
+    "name": "Java 20 Development",
+    "build": {
+        "dockerfile": "Dockerfile"
+    },
+    "customizations": {
+        "vscode": {
+            "extensions": [
+                "vscjava.vscode-java-pack",
+                "redhat.java",
+                "vscjava.vscode-maven",
+                "vscjava.vscode-gradle"
+            ]
+        }
+    },
+    "remoteUser": "vscode"
 }
